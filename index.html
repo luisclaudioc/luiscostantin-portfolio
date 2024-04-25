@@ -21,129 +21,173 @@
 
   </head>
 
+
   <body>
 
+    <!-- header  -->
+
     <nav>
-      <h1>Luis Costantin</h1>
+      <div class="name-container">
+        <h1>Luis Costantin</h1>
+        <p>junior dev</p>
+      </div>
       <ul class="navigation">
-        <li class="nav-option"><a href="#home">Home</a></li>
+        <li id="home-btn" class="nav-option">Home</li>
         <li class="nav-option"><a href="#about">About</a></li>
         <li class="nav-option"><a href="#projects">Projects</a></li>
-        <li class="nav-option"><a href="#contact">Contact</a></li>
+        <li id="contact-btn" class="nav-option"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     
+
     <!-- home  -->
 
-    <section id="home">
-      <h1 id="greeting">Oh, hi there! I am Luis Costantin</h1>
-      <h3>a junior developer</h3>
+    <section id="home" class="home-section center">
+      <div class="filler"></div>
+      <div class="home-container">
+        <div class="home-text">
+          <h1 class="greeting">Oh, hi there! I am <span class="rainbow">Luis</span>,</h1>
+          <h3>a junior developer</h3>
+        </div>
+        <div class="home-image">
+          <img class="cat-image" src="https://i.pinimg.com/originals/a6/42/72/a6427290d97d92343223643614c8ef80.gif" alt="a cartoon of a cat using a laptop">
+        </div>
+      </div>
     </section>
 
 
     <!-- about -->
 
-    <section id="about">
+    <section id="about" class="about-section center">
+      <div class="filler"></div>
+      <h2>ABOUT</h2>
 
-      <h2>Get to know me a bit, will you?</h2>
-      <div id="about-container" class="container">
-
-        <p>
-          I am a mechanical engineer born in Brazil, based elsewhere. 
-          In 2023, I started learning more about web development and software engineering, and that is where I found my passion.
-          My favorite part is to work the whole logic of it.
-          Though I am a late bloomer, my goal now is to make this my full-time carreer. 
-        </p>
-        <p>
-          In my free time, I love playing volleyball and trying as many new restaurants as I can possibly find. 
-          I am also a language enthusiast. I taught English as a second language for over 10 years, before teaching myself Spanish. 
-          Now, I have been studying German for a few months, so that I can finally communicate properly with my Austrian in-laws.
-        </p>
-
+      <div class="about-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUX9h9kilz6K6SCD_TC829jr7-y7iVnHOvmHttPUfyQ&s" alt="my personal picture">
+        <div>
+          <p>
+            I am a mechanical engineer born in Brazil, based elsewhere. 
+            In 2023, I started learning more about web development and software engineering, and that is where I found my passion.
+            My favorite part is to work the whole logic of it.
+            Though I am a late bloomer, my goal now is to make this my full-time career. 
+          </p>
+          <p>
+            In my free time, I love playing volleyball and trying as many new restaurants as I can possibly find. 
+            I am also a language enthusiast. I taught English as a second language for over 10 years, before teaching myself Spanish. 
+            Now, I have been studying German for a few months, so that I can finally communicate properly with my Austrian in-laws.
+          </p>
+        </div>
       </div>
-
+      
+      <div class="socials">
+        <div class="social-container">
+          <a href="https://www.linkedin.com/in/luis-claudio-costantin-18a50b153/" target="_blank">
+            <i class="fab fa-linkedin-in socicon"></i>
+          </a>
+          <a href="https://github.com/luisclaudioc" target="_blank">
+            <i class="fa-brands fa-github socicon"></i>
+          </a>
+          <a href="https://codepen.io/Luis-Costantin" target="_blank">
+            <i class="fa-brands fa-codepen socicon"></i>
+          </a>
+          <a href="https://www.instagram.com/luisclaudioc/" target="_blank">
+            <i class="fab fa-instagram socicon"></i>
+          </a>
+          <a href="#contact">
+            <i id="mail-btn" class="fa-regular fa-envelope socicon"></i>
+          </a>
+        </div>
+      </div>
+      
     </section>
     
+
     <!-- projects -->
 
-    <section id="projects">
+    <section id="projects" class="project-section center">
+      <div class="filler"></div>
+      <h2>PROJECTS</h2>
       
-      <h2>Check out some of my projects and skills!</h2>
       <div class="projects-container">
-        
+        <div id="left-arrow-container" class="arrow-outer-container center">
+          <i id="left-btn" class="fa-solid fa-arrow-left hidden"></i>
+        </div>
+        <div class="overflow">
+          <div id="projects-list"></div>
+        </div>
+        <div class="arrow-outer-container center">
+          <i id="right-btn" class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
       
     </section>
 
+    
     <!-- contact -->
 
-    <section id="contact">
-
-      <h2>Feel free to contact me.</h2>
-      <div id="form-container">
-
+    <dialog id="contact-dialog" class="center">
+      <h2>CONTACT</h2>
+      <div class="close-btn-container">
+        <i id="close-contact-btn" class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="form-container">
         <form action="https://formspree.io/f/mjvnjbpn" method="POST">
+          <div class="form-section">
+            <label for="name" class="label">Name</label>
+            <input 
+              type="text" 
+              id="name"
+              class="input-field"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
 
-          <label for="name">Name</label>
-          <input 
-            type="text" 
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
-          />
+          <div class="form-section">
+            <label for="email" class="label">Email</label>
+            <input 
+              type="email" 
+              id="email"
+              class="input-field"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
-          <label for="email">Email</label>
-          <input 
-            type="text" 
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
+          <div class="form-section">
+            <label for="message" class="label">Message</label>
+            <textarea 
+              id="message"
+              class="input-field"
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
 
-          <label for="message">Message</label>
-          <input 
-            type="text" 
-            id="message"
-            name="message"
-            placeholder="Enter your message"
-            required
-          />
-
-          <input 
+          <button 
             type="submit"
+            formmethod="dialog"
             value="Submit"
             id="submit-button"
-          />
-
+          >Submit</button>
+        
+        
         </form>
-
       </div>
+    </dialog>
+    
+    
+    <!-- footer -->
 
-    </section>
-
-    <div class="socials">
-
-      <a href="https://www.linkedin.com/in/luis-claudio-costantin-18a50b153/">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-
-      <a href="https://github.com/luisclaudioc">
-        <i class="fa-brands fa-github"></i>
-      </a>
-
-      <a href="https://codepen.io/Luis-Costantin">
-        <i class="fa-brands fa-codepen"></i>
-      </a>
-
-      <a href="https://www.instagram.com/luisclaudioc/">
-        <i class="fab fa-instagram"></i>
-      </a>
-      
-    </div>
-
+    <footer class="center">
+      <p>&copy 2024 Luis Costantin</p>
+    </footer>
+    
   </body>
 
   <script src="app.js" type="module"></script>
+
 </html>
