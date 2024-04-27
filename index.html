@@ -22,7 +22,7 @@
   </head>
 
 
-  <body>
+  <body id="top">
 
     <!-- header  -->
 
@@ -31,19 +31,21 @@
         <h1>Luis Costantin</h1>
         <p>junior dev</p>
       </div>
-      <ul class="navigation">
-        <li id="home-btn" class="nav-option">Home</li>
+      <ul id="nav-list" class="navigation">
+        <li class="nav-option"><a href="#top">Home</a></li>
         <li class="nav-option"><a href="#about">About</a></li>
         <li class="nav-option"><a href="#projects">Projects</a></li>
         <li id="contact-btn" class="nav-option"><a href="#contact">Contact</a></li>
       </ul>
+      <button id="bar-menu" class="bar-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
     
 
     <!-- home  -->
 
     <section id="home" class="home-section center">
-      <div class="filler"></div>
       <div class="home-container">
         <div class="home-text">
           <h1 class="greeting">Oh, hi there! I am <span class="rainbow">Luis</span>,</h1>
@@ -63,7 +65,9 @@
       <h2>ABOUT</h2>
 
       <div class="about-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUX9h9kilz6K6SCD_TC829jr7-y7iVnHOvmHttPUfyQ&s" alt="my personal picture">
+        <div>
+          <img src="public/images/personal-pic.png" alt="my personal picture">
+        </div>
         <div>
           <p>
             I am a mechanical engineer born in Brazil, based elsewhere. 
@@ -118,8 +122,12 @@
         <div class="arrow-outer-container center">
           <i id="right-btn" class="fa-solid fa-arrow-right"></i>
         </div>
+        <div class="button-container center">
+          <button id="see-all" class="btn">See all</button>
+        </div>
       </div>
       
+
     </section>
 
     
@@ -169,9 +177,9 @@
 
           <button 
             type="submit"
-            formmethod="dialog"
             value="Submit"
-            id="submit-button"
+            id="submit-btn"
+            class="btn"
           >Submit</button>
         
         
