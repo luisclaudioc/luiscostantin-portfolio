@@ -489,6 +489,10 @@ footer {
     height: 150px;
   }
 
+  .social-container {
+    bottom: 15%;
+  }
+
   .socicon {
     font-size: 1.5rem;
     padding-bottom: 10px;
@@ -500,14 +504,15 @@ footer {
   }
 
   .projects-container {
-    max-width: 360px;
+    width: 400px;
+    max-width: 85%;
     height: 395px;
     display: block;
   }
 
   #projects-list {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .overflow {
@@ -518,6 +523,7 @@ footer {
     width: 160px;
     height: 160px;
     margin: 5px;
+    padding: 3px;
   }
 
   h4 {
@@ -529,7 +535,7 @@ footer {
   }
 
   .button-container {
-    width: 100%;
+    width: 25%;
     max-width:395px;
     display: block;
   }
