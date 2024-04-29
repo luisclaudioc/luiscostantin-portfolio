@@ -535,7 +535,7 @@ footer {
   }
 
   .button-container {
-    width: 25%;
+    width: 100px;
     max-width:395px;
     display: block;
   }
