@@ -224,7 +224,6 @@ h2 {
   color: var(--primary-color);
   padding-bottom: 15px;
   padding-right: 5px;
-
 }
 
 .socicon:hover {
@@ -482,13 +481,26 @@ footer {
     flex-direction: column;
   }
 
+  .about-container img {
+    background-color: var(--cat-color);
+    border-radius: 50%;
+    margin: 20px;
+    height: 150px;
+  }
+
+  .socicon {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    padding-right: 3px;
+  }
+
   .arrow-outer-container {
     display: none;
   }
 
   .projects-container {
     width: 80%;
-    height: 475px;
+    height: 395px;
     display: block;
   }
 
@@ -498,21 +510,21 @@ footer {
   }
 
   .overflow {
-    height: 420px;
+    height: 340px;
   }
 
   .project-view {
-    width: 190px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     margin: 5px;
   }
 
   h4 {
-    font-size: 1rem;
+    font-size: 0.625rem;
   }
 
   .project-view p {
-    font-size: 0.625rem;
+    font-size: 0.5rem;
   }
 
   .button-container {

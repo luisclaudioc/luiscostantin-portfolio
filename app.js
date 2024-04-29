@@ -133,8 +133,8 @@ seeAllBtn.addEventListener("click", () => {
     overFlow.style.height = "auto";
   } else {
     seeAllBtn.innerText = "See all";
-    projectsContainer.style.height = "475px";
-    overFlow.style.height = "420px";
+    projectsContainer.style.height = "395px";
+    overFlow.style.height = "340px";
   }
 });
 
@@ -147,8 +147,8 @@ window.onresize = () => {
     leftBtn.classList.add("hidden");
   } else {
     seeAllBtn.innerText = "See all";
-    projectsContainer.style.height = "475px";
-    overFlow.style.height = "420px";
+    projectsContainer.style.height = "395px";
+    overFlow.style.height = "340px";
     projectList.style.left = "auto";
   }
 };
