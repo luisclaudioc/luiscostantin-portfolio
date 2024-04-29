@@ -52,6 +52,14 @@ barMenuBtn.addEventListener("click", () => {
   navList.classList.toggle("show");
 });
 
+const navBtn = document.querySelectorAll(".nav-option");
+
+navBtn.forEach((button) =>
+  button.addEventListener("click", () => {
+    navList.classList.remove("show");
+  })
+);
+
 
 // ---------------- DISPLAY PROJECTS --------------- //
 
@@ -109,8 +117,6 @@ leftBtn.addEventListener("click", () => {
 setInterval(() => {
   if (window.innerWidth > 720) {
     rightBtn.click();
-  } else {
-    projectList.style.left = "auto";
   }
 }, 3500);
 
@@ -125,16 +131,28 @@ seeAllBtn.addEventListener("click", () => {
   if (seeAllBtn.innerText === "See all") {
     seeAllBtn.innerText = "See less";
     projectsContainer.style.height = "auto";
-    overFlow.style.height = "auto"
+    overFlow.style.height = "auto";
   } else {
     seeAllBtn.innerText = "See all";
-    projectsContainer.style.height = "475px"
-    overFlow.style.height = "420px"
+    projectsContainer.style.height = "475px";
+    overFlow.style.height = "420px";
   }
-
 });
 
-
+window.onresize = () => {
+  if (window.innerWidth > 720) {
+    projectsContainer.style.height = "auto";
+    overFlow.style.height = "auto";
+    projectList.style.left = "auto";
+    projectCount = 0;
+    leftBtn.classList.add("hidden");
+  } else {
+    seeAllBtn.innerText = "See all";
+    projectsContainer.style.height = "475px";
+    overFlow.style.height = "420px";
+    projectList.style.left = "auto";
+  }
+};
 
 
 // ---------------- EMAIL CONTACT --------------- //

@@ -1,6 +1,6 @@
 /* VARIABLES */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Optima", sans-serf;
   --big-font-size: 3rem;
   --medium-font-size: 2rem;
   --small-font-size: 1.5rem;
@@ -118,8 +118,11 @@ nav ul li:active {
   font-size: 1.5rem;
   border: 0;
   background-color: transparent;
-  cursor: pointer;
   display: none;
+}
+
+.bar-menu:hover {
+  cursor: pointer;
 }
 
 
@@ -248,7 +251,7 @@ h2 {
   width: 1250px;
   padding: 10px;
   border-radius: 6px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px var(--shadow-color);
   margin: auto;
   color: var(--primary-color);
   background-color: white;
@@ -277,6 +280,7 @@ h2 {
 
 .overflow {
   overflow: hidden;
+  height: 350px;
 }
 
 #projects-list {
