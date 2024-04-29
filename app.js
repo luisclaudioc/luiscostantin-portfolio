@@ -53,7 +53,6 @@ barMenuBtn.addEventListener("click", () => {
 });
 
 const navBtn = document.querySelectorAll(".nav-option");
-
 navBtn.forEach((button) =>
   button.addEventListener("click", () => {
     navList.classList.remove("show");
