@@ -139,13 +139,13 @@ seeAllBtn.addEventListener("click", () => {
 });
 
 window.onresize = () => {
-  if (window.innerWidth > 720) {
+  if (window.outerWidth > 720) {
     projectsContainer.style.height = "auto";
     overFlow.style.height = "auto";
     projectList.style.left = "auto";
     projectCount = 0;
     leftBtn.classList.add("hidden");
-  } else if (window.innerWidth <= 720) {
+  } else if (window.outerWidth <= 720) {
     seeAllBtn.innerText = "See all";
     projectsContainer.style.height = "395px";
     overFlow.style.height = "340px";
