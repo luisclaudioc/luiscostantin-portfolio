@@ -279,12 +279,13 @@ h2 {
 
 .overflow {
   overflow: hidden;
-  height: 350px;
+  height: auto;
 }
 
 #projects-list {
   width: 1110px;
   display: flex; 
+  height: auto;
   align-items: center;
   position: relative;
   left: 0;
@@ -340,7 +341,7 @@ h4 {
 
 /* CONTACT */
 #contact-dialog {
-  max-width: 80%;
+  max-width: 75%;
   background-color: var(--bright);
   padding: 20px;
   padding-top: 0;

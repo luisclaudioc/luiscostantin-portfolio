@@ -114,7 +114,7 @@ leftBtn.addEventListener("click", () => {
 });
 
 setInterval(() => {
-  if (window.innerWidth > 720) {
+  if (window.outerWidth > 720) {
     rightBtn.click();
   }
 }, 3500);
@@ -145,7 +145,7 @@ window.onresize = () => {
     projectList.style.left = "auto";
     projectCount = 0;
     leftBtn.classList.add("hidden");
-  } else {
+  } else if (window.innerWidth <= 720) {
     seeAllBtn.innerText = "See all";
     projectsContainer.style.height = "395px";
     overFlow.style.height = "340px";
