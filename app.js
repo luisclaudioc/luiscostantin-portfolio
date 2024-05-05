@@ -138,18 +138,22 @@ seeAllBtn.addEventListener("click", () => {
   }
 });
 
+var screenWidth = window.outerWidth;
 window.onresize = () => {
-  if (window.outerWidth > 720) {
-    projectsContainer.style.height = "auto";
-    overFlow.style.height = "auto";
-    projectList.style.left = "auto";
-    projectCount = 0;
-    leftBtn.classList.add("hidden");
-  } else if (window.outerWidth <= 720) {
-    seeAllBtn.innerText = "See all";
-    projectsContainer.style.height = "395px";
-    overFlow.style.height = "340px";
-    projectList.style.left = "auto";
+  if (window.outerWidth !== screenWidth) {
+    screenWidth = window.outerWidth;
+    if (window.outerWidth > 720) {
+      projectsContainer.style.height = "auto";
+      overFlow.style.height = "auto";
+      projectList.style.left = "auto";
+      projectCount = 0;
+      leftBtn.classList.add("hidden");
+    } else if (window.outerWidth <= 720) {
+      seeAllBtn.innerText = "See all";
+      projectsContainer.style.height = "395px";
+      overFlow.style.height = "340px";
+      projectList.style.left = "auto";
+    }
   }
 };
 
