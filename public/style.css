@@ -372,7 +372,7 @@ h4 {
 .form-container {
   width: 30rem;
   max-width: 100%;
-  height: 29rem;
+  height: 27rem;
   padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 3px 5px var(--shadow-color);
@@ -404,7 +404,7 @@ label {
 }
 
 #message {
-  height: 230px;
+  height: 200px;
   resize: none;
 }
 
@@ -420,7 +420,7 @@ label {
   border: 0.5px solid var(--primary-color);
   font-weight: var(--normal-font);
   transition: var(--transition);
-}
+} 
 
 .btn:hover {
   background-color: var(--cat-color);
@@ -537,7 +537,7 @@ footer {
   }
 
   .button-container {
-    width: 100px;
+    width: 160px;
     display: block;
   }
 
