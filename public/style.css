@@ -413,6 +413,7 @@ label {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
+  margin-bottom: 5px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: 5px;
