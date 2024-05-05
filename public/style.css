@@ -370,8 +370,8 @@ h4 {
 }
 
 .form-container {
-  width: 35rem;
-  max-width: 100%;
+  width: 30rem;
+  max-width: 90%;
   height: 29rem;
   padding: 1rem;
   border-radius: 6px;
@@ -537,7 +537,6 @@ footer {
 
   .button-container {
     width: 100px;
-    max-width:395px;
     display: block;
   }
   
