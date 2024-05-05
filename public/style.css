@@ -341,7 +341,7 @@ h4 {
 
 /* CONTACT */
 #contact-dialog {
-  max-width: 85%;
+  max-width: 70%;
   background-color: var(--bright);
   padding: 1rem;
   padding-top: 0;
