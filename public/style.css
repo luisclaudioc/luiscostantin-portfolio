@@ -343,7 +343,7 @@ h4 {
 #contact-dialog {
   max-width: 85%;
   background-color: var(--bright);
-  padding: 20px;
+  padding: 1rem;
   padding-top: 0;
   border: 1px solid var(--primary-color);
   border-radius: 6px;
@@ -352,10 +352,10 @@ h4 {
 
 .close-btn-container {
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 1rem;
+  right: 1rem;
   color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: var(--medium-font-size);
 }
 
 .close-btn-container i:hover {
@@ -538,6 +538,19 @@ footer {
   .button-container {
     width: 100px;
     display: block;
+  }
+
+  #contact-dialog {
+    padding: 10px;
+    padding-top: 0;
+  }
+  
+  .form-container {
+    width: 25rem;
+  }
+
+  .close-btn-container {
+    font-size: var(--small-font-size);
   }
   
 }
