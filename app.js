@@ -30,6 +30,12 @@ const projects = [
       skills: ["Python", "Data Analysis", "Pandas"],
   },
   {
+      name: "Data Treemap Diagram",
+      image: "public/images/data-treemap-diagram.png",
+      href: "https://codepen.io/Luis-Costantin/full/dywxEaL#_=_",
+      skills: ["JavaScript", "D3.js"],
+  },
+  {
       name: "Drum Machine",
       image: "public/images/drum-machine.png",
       href: "https://codepen.io/Luis-Costantin/full/WNLZJLm",
